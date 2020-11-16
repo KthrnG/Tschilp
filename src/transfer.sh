@@ -1,16 +1,14 @@
 #!/bin/bash
 
-#WLAN Verbindung berücksichtigen
-#Kontinuität
+# Alle MP3 Dateien in dem Tschilp Audioverzeichnis per ssh auf einen Server kopieren und anschließend löschen.
 
 beendet=false
 
-trap beenden SIGINT
-trap beenden SIGTERM
+trap beenden SIGINT SIGTERM
 
 function beenden(){
 	beendet=true
-	echo "Stoppe Transfer..."
+	echo "Stoppe Transfer ..."
 }
 
 function kopierenUndLoeschen(){

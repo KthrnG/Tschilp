@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Wertet das Ergebnis der Analyse aus und versendet eine E-Mail bei neu beobachteten Vögeln.
+
 sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/beobachtungen.sqlite" << 'END_SQL'
 CREATE TABLE IF NOT EXISTS voegel (
   id TEXT PRIMARY KEY,
@@ -9,7 +11,7 @@ CREATE TABLE IF NOT EXISTS voegel (
 );
 END_SQL
 
-while [ true ];do
+while [ true ]; do
 	if [ -z "$(ls $TSCHILP_ANALYSEVERZEICHNIS)" ]; then
 		sleep 60
 		continue

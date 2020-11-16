@@ -1,9 +1,20 @@
 #!/bin/bash
 
-while [ true ]; do
+# Aufgenommene Audiodateien mit BIRD.net analysieren.
+
+beendet=false
+
+trap beenden SIGINT SIGTERM
+
+function beenden(){
+	beendet=true
+	echo "Stoppe Analyse ..."
+}
+
+while [ "$beendet" = false ]; do
 	if [ -n "$(ls $TSCHILP_AUDIOVERZEICHNIS)" ]; then
 		docker run -v $TSCHILP_AUDIOVERZEICHNIS:/audio -v $TSCHILP_ANALYSEVERZEICHNIS:/analyse birdnet --i /audio --o /analyse --filetype mp3 --min_conf 0.95 --week `date +%V`
-	    	mv $TSCHILP_AUDIOVERZEICHNIS/*.mp3 $TSCHILP_AUDIOARCHIV
-      	fi
+        mv $TSCHILP_AUDIOVERZEICHNIS/*.mp3 $TSCHILP_AUDIOARCHIV
+    fi
 	sleep 60
 done

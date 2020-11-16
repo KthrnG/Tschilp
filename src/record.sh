@@ -1,13 +1,14 @@
 #!/bin/bash
 
+# Den Ton mit dem angeschlossenen Mikrofon kontinuierlich aufnehmen und in MP3 Datein von 10 Sekunden Länge speichern.
+
 beendet=false
 
-trap beenden SIGINT
-trap beenden SIGTERM
+trap beenden SIGINT SIGTERM
 
 function beenden(){
 	beendet=true
-	echo "Stoppe Aufnahme..."
+	echo "Stoppe Aufnahme ..."
 }
 
 while [ "$beendet" = false ]; do
