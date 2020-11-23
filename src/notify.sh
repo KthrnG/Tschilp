@@ -23,7 +23,7 @@ while [ true ]; do
 			if [ -z "$anzahl" ]; then
 				echo "Neuer Vogel: $common_name"
 				sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/beobachtungen.sqlite" "INSERT INTO voegel VALUES ('$species_code','$common_name',1,'$timestamp')"
-				mail -s "Neuer Vogel: $common_name" $TSCHILP_EMAIL_EMPFAENGER -aFrom:Tschilp\<$TSCHILP_EMAIL_ABSENDER\> << 'END_MAIL'
+				mail -s "Neuer Vogel: $common_name" $TSCHILP_EMAIL_EMPFAENGER -aFrom:Tschilp\<$TSCHILP_EMAIL_ABSENDER\> -A $TSCHILP_AUDIOARCHIV/$begin_file  << 'END_MAIL'
 Ein neuer Vogel kam vorbei!
 END_MAIL
 			else
