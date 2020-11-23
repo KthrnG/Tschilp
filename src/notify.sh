@@ -24,7 +24,7 @@ while [ true ]; do
 				echo "Neuer Vogel: $common_name"
 				sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/beobachtungen.sqlite" "INSERT INTO voegel VALUES ('$species_code','$common_name',1,'$timestamp')"
 				mail -s "Neuer Vogel: $common_name" $TSCHILP_EMAIL_EMPFAENGER -aFrom:Tschilp\<$TSCHILP_EMAIL_ABSENDER\> << 'END_MAIL'
-Ein neuer Vogel kam vorbei!
+Ein neuer Vogel kam vorbei um $timestamp!
 END_MAIL
 			else
 				echo "Alter Vogel: $common_name ($anzahl)"
