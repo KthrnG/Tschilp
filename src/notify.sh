@@ -18,7 +18,7 @@ while [ true ]; do
 	fi
 	for datei in $TSCHILP_ANALYSEVERZEICHNIS/*.txt; do
 		while IFS=$'\t' read -r selection view channel begin_file begin_time end_time low_freq high_freq species_code common_name confidence rank; do
-			timestamp=`basename -s .mp3  $begin_file`
+			timestamp=`basename -s .wav $begin_file`
 			anzahl=`sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/beobachtungen.sqlite" "SELECT anzahl_beobachtungen FROM voegel WHERE id='$species_code';"`
 			if [ -z "$anzahl" ]; then
 				echo "Neuer Vogel: $common_name"
