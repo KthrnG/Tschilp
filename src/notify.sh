@@ -7,7 +7,8 @@ CREATE TABLE IF NOT EXISTS voegel (
   id TEXT PRIMARY KEY,
   name TEXT,
   anzahl_beobachtungen INTEGER,
-  letzte_beobachtung INTEGER
+  letzte_beobachtung INTEGER,
+  confidence FLOAT
 );
 END_SQL
 
@@ -16,19 +17,19 @@ while [ true ]; do
 		sleep 60
 		continue
 	fi
-	for datei in $TSCHILP_ANALYSEVERZEICHNIS/*.txt; do
-		while IFS=$'\t' read -r selection view channel begin_file begin_time end_time low_freq high_freq species_code common_name confidence rank; do
-			timestamp=`basename -s .wav $begin_file`
-			anzahl=`sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/beobachtungen.sqlite" "SELECT anzahl_beobachtungen FROM voegel WHERE id='$species_code';"`
+	for datei in $TSCHILP_ANALYSEVERZEICHNIS/*.csv; do
+		while IFS=$';' read -r start end scientific_name common_name confidence; do
+			timestamp=`basename -s .csv $datei`
+			anzahl=`sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/beobachtungen.sqlite" "SELECT anzahl_beobachtungen FROM voegel WHERE id='$scientific_name';"`
 			if [ -z "$anzahl" ]; then
 				echo "Neuer Vogel: $common_name"
-				sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/beobachtungen.sqlite" "INSERT INTO voegel VALUES ('$species_code','$common_name',1,'$timestamp')"
-				mail -s "Neuer Vogel: $common_name" $TSCHILP_EMAIL_EMPFAENGER -aFrom:Tschilp\<$TSCHILP_EMAIL_ABSENDER\> -A $TSCHILP_AUDIOARCHIV/$begin_file  << 'END_MAIL'
-Ein neuer Vogel kam vorbei!
+				sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/beobachtungen.sqlite" "INSERT INTO voegel VALUES ('$scientific_name','$common_name',1,'$timestamp','$confidence')"
+				mail -s "Neuer Vogel: $common_name" $TSCHILP_EMAIL_EMPFAENGER -aFrom:Tschilp\<$TSCHILP_EMAIL_ABSENDER\> -A $TSCHILP_AUDIOARCHIV/$timestamp.wav  << 'END_MAIL'
+Ein neuer Vogel kam vorbei! https://de.wikipedia.org/wiki/$scientific_name
 END_MAIL
 			else
 				echo "Alter Vogel: $common_name ($anzahl)"
-				sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/beobachtungen.sqlite" "UPDATE voegel SET anzahl_beobachtungen = anzahl_beobachtungen + 1, letzte_beobachtung = '$timestamp' WHERE id='$species_code';"
+				sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/beobachtungen.sqlite" "UPDATE voegel SET anzahl_beobachtungen = anzahl_beobachtungen + 1, letzte_beobachtung = '$timestamp', confidence = '$confidence' WHERE id='$scientific_name';"
 			fi
 		done < <(tail -n +2 $datei)
 		mv $datei $TSCHILP_ANALYSEARCHIV/
