@@ -5,11 +5,12 @@
 trap beenden SIGINT SIGTERM
 
 function beenden() {
-  echo "Stoppe Analyse ..."
+  echo "Stoppe Benachrichtigung ..."
   exit
 }
 
-sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/beobachtungen.sqlite" <<'END_SQL'
+function datenbank_anlegen() {
+  sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/beobachtungen.sqlite" <<'END_SQL'
 CREATE TABLE IF NOT EXISTS voegel (
   id TEXT PRIMARY KEY,
   name TEXT,
@@ -18,13 +19,9 @@ CREATE TABLE IF NOT EXISTS voegel (
   confidence FLOAT
 );
 END_SQL
+}
 
-while [ true ]; do
-  if [ -z "$(ls $TSCHILP_ANALYSEVERZEICHNIS)" ]; then
-    sleep 60 &
-    wait $!
-    continue
-  fi
+function benachrichtigen() {
   for datei in $TSCHILP_ANALYSEVERZEICHNIS/*.csv; do
     while IFS=$';' read -r start end scientific_name common_name confidence; do
       timestamp=$(basename -s .csv $datei)
@@ -42,6 +39,14 @@ END_MAIL
     done < <(tail -n +2 $datei)
     mv $datei $TSCHILP_ANALYSEARCHIV/
   done
+}
+
+datenbank_anlegen
+
+while true; do
+  if [ -n "$(ls $TSCHILP_ANALYSEVERZEICHNIS)" ]; then
+    benachrichtigen
+  fi
   sleep 60 &
   wait $!
 done

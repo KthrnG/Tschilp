@@ -18,8 +18,8 @@ function kopierenUndLoeschen() {
   done
 }
 
-while [ true ]; do
-  if [ -n "$(ls -A $TSCHILP_AUDIOVERZEICHNIS)" ]; then
+while true; do
+  if [ -n "$(ls $TSCHILP_AUDIOVERZEICHNIS)" ]; then
     kopierenUndLoeschen
   fi
   sleep 60 &
