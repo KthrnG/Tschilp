@@ -10,7 +10,7 @@ function beenden() {
 }
 
 function kopierenUndLoeschen() {
-  for audiodatei in $TSCHILP_AUDIOVERZEICHNIS/*.mp3; do
+  for audiodatei in $TSCHILP_AUDIOVERZEICHNIS/*.wav; do
     scp $audiodatei $TSCHILP_USER@$TSCHILP_SERVER:$TSCHILP_ZIELVERZEICHNIS
     if [ "$?" -eq 0 ]; then
       rm $audiodatei
@@ -22,6 +22,6 @@ while true; do
   if [ -n "$(ls $TSCHILP_AUDIOVERZEICHNIS)" ]; then
     kopierenUndLoeschen
   fi
-  sleep 60 &
+  sleep 3 &
   wait $!
 done
