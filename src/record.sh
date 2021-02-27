@@ -11,8 +11,8 @@ function beenden() {
 
 function aufnehmen() {
   date=$(date +%s)
-  arecord -D hw:1 -d 10 -f cd -r 48000 -c 1 "$TSCHILP_AUDIOVERZEICHNIS/$date.tmp"
-  mv "$TSCHILP_AUDIOVERZEICHNIS/$date.tmp" "$TSCHILP_AUDIOVERZEICHNIS/$date.wav"
+  arecord -D hw:1 -d 10 -f cd -r 48000 -c 1 | lame -h -b 192 - "$TSCHILP_AUDIOVERZEICHNIS/$date.tmp"
+  mv "$TSCHILP_AUDIOVERZEICHNIS/$date.tmp" "$TSCHILP_AUDIOVERZEICHNIS/$date.mp3"
 }
 
 while true; do

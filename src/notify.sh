@@ -29,7 +29,7 @@ function benachrichtigen() {
       if [ -z "$anzahl" ]; then
         echo "Neuer Vogel: $common_name"
         sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/beobachtungen.sqlite" "INSERT INTO voegel VALUES ('$scientific_name','$common_name',1,'$timestamp','$confidence')"
-        mail -s "Neuer Vogel: $common_name" $TSCHILP_EMAIL_EMPFAENGER -aFrom:Tschilp\<$TSCHILP_EMAIL_ABSENDER\> -A $TSCHILP_AUDIOARCHIV/$timestamp.wav <<'END_MAIL'
+        mail -s "Neuer Vogel: $common_name" $TSCHILP_EMAIL_EMPFAENGER -aFrom:Tschilp\<$TSCHILP_EMAIL_ABSENDER\> -A $TSCHILP_AUDIOARCHIV/$timestamp.mp3 <<'END_MAIL'
 Ein neuer Vogel kam vorbei! https://de.wikipedia.org/wiki/$scientific_name
 END_MAIL
       else
