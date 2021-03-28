@@ -100,8 +100,8 @@
     "name_en": "Tundra Swan",
     "name_de": "Zwergschwan",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=0BCBA6B9CC19E7BA",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Zwergschwan",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Cygnus_bewickii_01.jpg/600px-Cygnus_bewickii_01.jpg"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Pfeifschwan",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Cygnus-columbianus-columbianus-001.jpg/600px-Cygnus-columbianus-columbianus-001.jpg"
   },
   {
     "scientific_name": "Cygnus cygnus",
@@ -196,8 +196,8 @@
     "name_en": "American Wigeon",
     "name_de": "Kanadapfeifente",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=D201EB7230F20770",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Kanadapfeifente",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Nordamerikanische_Pfeifente",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/American_Wigeon_pair.JPG/600px-American_Wigeon_pair.JPG"
   },
   {
     "scientific_name": "Anas platyrhynchos",
@@ -284,8 +284,8 @@
     "name_en": "Lesser Scaup",
     "name_de": "Kanadabergente",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=50566E50C91B8686",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Kanadabergente",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Veilchenente",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Lesser.scaup.arp.750pix.jpg/600px-Lesser.scaup.arp.750pix.jpg"
   },
   {
     "scientific_name": "Polysticta stelleri",
@@ -340,7 +340,7 @@
     "name_en": "Stejneger's Scoter",
     "name_de": "Kamtschatkasamtente",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=1A601D86C048CBAA",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Kamtschatkasamtente",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Melanitta_stejnegeri",
     "img": "null"
   },
   {
@@ -356,7 +356,7 @@
     "name_en": "Black Scoter",
     "name_de": "Pazifiktrauerente",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=B7B1A5DD94724A05",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Pazifiktrauerente",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Melanitta_americana",
     "img": "null"
   },
   {
@@ -428,8 +428,8 @@
     "name_en": "Common Quail",
     "name_de": "Wachtel",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=CAFE345DCABD8BF8",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Wachtel",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Wachtel_(Art)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Quaglia.jpg"
   },
   {
     "scientific_name": "Alectoris graeca",
@@ -676,8 +676,8 @@
     "name_en": "Egyptian Nightjar",
     "name_de": "Pharaonenziegenmelker",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=2F7F024457A842B1",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Pharaonenziegenmelker",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Pharaonen-Ziegenmelker",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Egyptian_nightjar_by_irvin_calicut_DSCN3202.JPG/600px-Egyptian_nightjar_by_irvin_calicut_DSCN3202.JPG"
   },
   {
     "scientific_name": "Apus melba",
@@ -820,8 +820,8 @@
     "name_en": "Eurasian Thick-knee",
     "name_de": "Triel",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=C7DB323E37CEDBE6",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Triel",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Triel_(Art)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Triel_%28Burhinus_oedicnemus%29.jpg/600px-Triel_%28Burhinus_oedicnemus%29.jpg"
   },
   {
     "scientific_name": "Himantopus himantopus",
@@ -884,8 +884,8 @@
     "name_en": "Northern Lapwing",
     "name_de": "Kiebitz",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=F029489ABD9D1334",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Kiebitz",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Kiebitz_(Art)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Northern-Lapwing-Vanellus-vanellus_crop.jpg/600px-Northern-Lapwing-Vanellus-vanellus_crop.jpg"
   },
   {
     "scientific_name": "Vanellus indicus",
@@ -932,7 +932,7 @@
     "name_en": "Caspian Plover",
     "name_de": "Wermutregenpfeifer",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=264D03516760D706",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Wermutregenpfeifer",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Charadrius_asiaticus",
     "img": "null"
   },
   {
@@ -1060,8 +1060,8 @@
     "name_en": "Sharp-tailed Sandpiper",
     "name_de": "Spitzschwanz-Strandläufer",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=A0A67A811E53D89F",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Spitzschwanz-Strandl%C3%A4ufer",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Spitzschwanzstrandl%C3%A4ufer",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Sharp-tailed_Sandpiper_8028.jpg/600px-Sharp-tailed_Sandpiper_8028.jpg"
   },
   {
     "scientific_name": "Calidris himantopus",
@@ -1092,16 +1092,16 @@
     "name_en": "Long-toed Stint",
     "name_de": "Langzehen-Strandläufer",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=7D629288C753814E",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Langzehen-Strandl%C3%A4ufer",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Langzehenstrandl%C3%A4ufer",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Calidris_subminuta_PA021275.jpg"
   },
   {
     "scientific_name": "Calidris ruficollis",
     "name_en": "Red-necked Stint",
     "name_de": "Rotkehl-Strandläufer",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=BBDF2F1BAC640E4D",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Rotkehl-Strandl%C3%A4ufer",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Rotkehlstrandl%C3%A4ufer",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Calidris_ruficollis_-_Marion_Bay.jpg/600px-Calidris_ruficollis_-_Marion_Bay.jpg"
   },
   {
     "scientific_name": "Calidris alba",
@@ -1364,8 +1364,8 @@
     "name_en": "Great Skua",
     "name_de": "Skua",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=BB041C6E5DB73FC7",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Skua",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Gro%C3%9Fe_Raubm%C3%B6we",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Great_Skua.jpg/600px-Great_Skua.jpg"
   },
   {
     "scientific_name": "Stercorarius pomarinus",
@@ -1796,23 +1796,23 @@
     "name_en": "European Storm-Petrel",
     "name_de": "Sturmschwalbe",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=E1638A370D09095C",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/N%C3%B6rdliche_Sturmschwalben",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Oceanodroma_furcata1.jpg/600px-Oceanodroma_furcata1.jpg"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Sturmwellenl%C3%A4ufer",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Hydrobates_pelagicus.jpg/600px-Hydrobates_pelagicus.jpg"
   },
   {
     "scientific_name": "Oceanodroma leucorhoa",
     "name_en": "Leach's Storm-Petrel",
     "name_de": "Wellenläufer",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=C5FB15C6D112FE91",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Wellenl%C3%A4ufer",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Wellenl%C3%A4ufer_(Art)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Lesp1.jpg/600px-Lesp1.jpg"
   },
   {
     "scientific_name": "Oceanodroma monorhis",
     "name_en": "Swinhoe's Storm-Petrel",
     "name_de": "Swinhoewellenläufer",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=80DE86705CC16A9A",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Swinhoewellenl%C3%A4ufer",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Oceanodroma_monorhis",
     "img": "null"
   },
   {
@@ -1860,8 +1860,8 @@
     "name_en": "Sooty Shearwater",
     "name_de": "Dunkler Sturmtaucher",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=1725B07D51A40D6A",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Dunkler_Sturmtaucher",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Sooty_shearwater_kaikoura.jpg/600px-Sooty_shearwater_kaikoura.jpg"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Ardenna_grisea",
+    "img": "null"
   },
   {
     "scientific_name": "Puffinus puffinus",
@@ -1884,7 +1884,7 @@
     "name_en": "Barolo Shearwater",
     "name_de": "Barolosturmtaucher",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=5F555FDD48DEAC1C",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Barolosturmtaucher",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Puffinus_baroli",
     "img": "null"
   },
   {
@@ -1932,8 +1932,8 @@
     "name_en": "Great Cormorant",
     "name_de": "Kormoran",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=3DF5C587CE3CF1E1",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Kormoran",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Kormoran_(Art)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Phalacrocorax_carbo_Vic.jpg/400px-Phalacrocorax_carbo_Vic.jpg"
   },
   {
     "scientific_name": "Phalacrocorax aristotelis",
@@ -2044,8 +2044,8 @@
     "name_en": "Glossy Ibis",
     "name_de": "Sichler",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=D4540F880A3EC3BB",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Sichler",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Brauner_Sichler",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Plegadis_falcinellus_Syracuse.jpg/600px-Plegadis_falcinellus_Syracuse.jpg"
   },
   {
     "scientific_name": "Threskiornis aethiopicus",
@@ -2172,8 +2172,8 @@
     "name_en": "Imperial Eagle",
     "name_de": "Kaiseradler",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=469DCF57248A1C69",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Kaiseradler",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/%C3%96stlicher_Kaiseradler",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Impeagle.JPG/446px-Impeagle.JPG"
   },
   {
     "scientific_name": "Aquila chrysaetos",
@@ -2188,8 +2188,8 @@
     "name_en": "Bonelli's Eagle",
     "name_de": "Habichtsadler",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=05F1144132A7E4FF",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Habichtsadler",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Habichtsadler_(Art)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Habichtsadler_ad_Prov._Cadiz20140929_b.png/600px-Habichtsadler_ad_Prov._Cadiz20140929_b.png"
   },
   {
     "scientific_name": "Circus aeruginosus",
@@ -2228,8 +2228,8 @@
     "name_en": "Eurasian Sparrowhawk",
     "name_de": "Sperber",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=DB376A66278ED21E",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Sperber",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Sperber_(Art)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Accipiter_nisus_kill.jpg/600px-Accipiter_nisus_kill.jpg"
   },
   {
     "scientific_name": "Accipiter gentilis",
@@ -2260,8 +2260,8 @@
     "name_en": "White-tailed Eagle",
     "name_de": "Seeadler",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=5A3D91D3254A568D",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Seeadler",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Seeadler_(Art)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/White-tailed-eagle.jpg/600px-White-tailed-eagle.jpg"
   },
   {
     "scientific_name": "Buteo lagopus",
@@ -2412,8 +2412,8 @@
     "name_en": "European Bee-eater",
     "name_de": "Bienenfresser",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=66AA3934DBAD18BC",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Bienenfresser",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Bienenfresser_(Art)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Pair_of_Merops_apiaster_feeding.jpg/600px-Pair_of_Merops_apiaster_feeding.jpg"
   },
   {
     "scientific_name": "Coracias garrulus",
@@ -2428,8 +2428,8 @@
     "name_en": "Eurasian Wryneck",
     "name_de": "Wendehals",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=B2E6AB9FC2608DFA",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Wendehals",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Wendehals_(Vogel)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Jynx_torquilla_vlaskop_cropped.jpg/600px-Jynx_torquilla_vlaskop_cropped.jpg"
   },
   {
     "scientific_name": "Picoides tridactylus",
@@ -2540,8 +2540,8 @@
     "name_en": "Merlin",
     "name_de": "Merlin",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=F3DA111CC8A6841B",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Merlin",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Merlin_%28illustration_from_middle_ages%29.jpg/550px-Merlin_%28illustration_from_middle_ages%29.jpg"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Merlin_(Vogel)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Falco_columbarius_Male.jpg/399px-Falco_columbarius_Male.jpg"
   },
   {
     "scientific_name": "Falco subbuteo",
@@ -2636,8 +2636,8 @@
     "name_en": "Red-tailed Shrike",
     "name_de": "Neuntöter-phoenicuroides",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=EE7915A2B3EB856E",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Neunt%C3%B6ter-phoenicuroides",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Rotschwanzw%C3%BCrger",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Isabelline_Shrike_%28Lanius_isabellinus_phoenicuroides%29.JPG/600px-Isabelline_Shrike_%28Lanius_isabellinus_phoenicuroides%29.JPG"
   },
   {
     "scientific_name": "Lanius isabellinus",
@@ -2940,7 +2940,7 @@
     "name_en": "Booted Warbler",
     "name_de": "Buschspötter",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=1A6C6F1718FEDB5D",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Buschsp%C3%B6tter",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Iduna_caligata",
     "img": "null"
   },
   {
@@ -2948,7 +2948,7 @@
     "name_en": "Sykes's Warbler",
     "name_de": "Steppenspötter",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=A8242804046F8F14",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Steppensp%C3%B6tter",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Iduna_rama",
     "img": "null"
   },
   {
@@ -3212,7 +3212,7 @@
     "name_en": "Eastern Crowned Warbler",
     "name_de": "Kronenlaubsänger",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=2D272F5A53B5B83E",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Kronenlaubs%C3%A4nger",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Phylloscopus_coronatus",
     "img": "null"
   },
   {
@@ -3220,7 +3220,7 @@
     "name_en": "Green Warbler",
     "name_de": "Wacholderlaubsänger",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=3542C46BC98FB367",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Wacholderlaubs%C3%A4nger",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Phylloscopus_nitidus",
     "img": "null"
   },
   {
@@ -3236,7 +3236,7 @@
     "name_en": "Two-barred Warbler",
     "name_de": "Middendorff-Laubsänger",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=38C788AE632E48DF",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Middendorff-Laubs%C3%A4nger",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Phylloscopus_plumbeitarsus",
     "img": "null"
   },
   {
@@ -3316,7 +3316,7 @@
     "name_en": "Eastern Orphean Warbler",
     "name_de": "Östliche Orpheusgrasmücke",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=37015E6154731355",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/%C3%96stliche_Orpheusgrasm%C3%BCcke",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Sylvia_crassirostris",
     "img": "null"
   },
   {
@@ -3332,7 +3332,7 @@
     "name_en": "Moltoni's Warbler",
     "name_de": "Ligurien-Bartgrasmücke",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=1F8F851EF898FCC6",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Ligurien-Bartgrasm%C3%BCcke",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Sylvia_subalpina",
     "img": "null"
   },
   {
@@ -3396,8 +3396,8 @@
     "name_en": "Eurasian Nuthatch",
     "name_de": "Kleiber",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=3C468678E0958FC6",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Kleiber",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Kleiber_(Art)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Kleiber_vertikal_klassisch_nah.jpg/600px-Kleiber_vertikal_klassisch_nah.jpg"
   },
   {
     "scientific_name": "Certhia familiaris",
@@ -3436,8 +3436,8 @@
     "name_en": "European Starling",
     "name_de": "Star",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=94A4403295E2D9BE",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Star",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Star_(Art)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sturnus_vulgaris_2_%28Marek_Szczepanek%29.jpg/600px-Sturnus_vulgaris_2_%28Marek_Szczepanek%29.jpg"
   },
   {
     "scientific_name": "Sturnus unicolor",
@@ -3468,7 +3468,7 @@
     "name_en": "White's Thrush",
     "name_de": "Sibirische Erddrossel",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=8E267A2656A555F5",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Sibirische_Erddrossel",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Zoothera_aurea",
     "img": "null"
   },
   {
@@ -3492,7 +3492,7 @@
     "name_en": "Swainson's Thrush",
     "name_de": "Zwergdrossel",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=E53FC25C090A6AD8",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Zwergdrossel",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Catharus_ustulatus",
     "img": "null"
   },
   {
@@ -3556,7 +3556,7 @@
     "name_en": "Tickell's Thrush",
     "name_de": "Einfarbdrossel",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=F4692C3B28EF7A78",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Einfarbdrossel",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Turdus_unicolor",
     "img": "null"
   },
   {
@@ -3564,7 +3564,7 @@
     "name_en": "Eyebrowed Thrush",
     "name_de": "Weißbrauendrossel",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=6E24CCD187765B9A",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Wei%C3%9Fbrauendrossel",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Turdus_obscurus",
     "img": "null"
   },
   {
@@ -3604,16 +3604,16 @@
     "name_en": "Dusky Thrush",
     "name_de": "Rostflügeldrossel",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=E3B6927817B7ABB4",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Naumanndrossel",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Naumann%27s_Thrush_in_Temple_of_Heaven.JPG"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Turdus_eunomus",
+    "img": "null"
   },
   {
     "scientific_name": "Turdus naumanni",
     "name_en": "Naumann's Thrush",
     "name_de": "Rotschwanzdrossel",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=22761AD4A981E2F6",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Rotschwanzdrossel",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Naumanndrossel",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Naumann%27s_Thrush_in_Temple_of_Heaven.JPG"
   },
   {
     "scientific_name": "Muscicapa striata",
@@ -3748,7 +3748,7 @@
     "name_en": "Siberian Stonechat",
     "name_de": "Siberisches Schwarzkehlchen",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=3380CFC58F79BAB8",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Siberisches_Schwarzkehlchen",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Saxicola_maurus",
     "img": "null"
   },
   {
@@ -3756,8 +3756,8 @@
     "name_en": "Northern Wheatear",
     "name_de": "Steinschmätzer",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=AB031597691D999C",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Steinschm%C3%A4tzer",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Steinschm%C3%A4tzer_(Art)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Steinschmaetzer_Northern_wheatear_male.jpg/600px-Steinschmaetzer_Northern_wheatear_male.jpg"
   },
   {
     "scientific_name": "Oenanthe isabellina",
@@ -3780,7 +3780,7 @@
     "name_en": "Pied Wheatear",
     "name_de": "Nonnensteinschmätzer",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=2FB34D83F74FCEAB",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Nonnensteinschm%C3%A4tzer",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Oenanthe_pleschanka",
     "img": "null"
   },
   {
@@ -3796,7 +3796,7 @@
     "name_en": "Cyprus Wheatear",
     "name_de": "Zypernsteinschmätzer",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=A3148129CFD0450B",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Zypernsteinschm%C3%A4tzer",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Oenanthe_cypriaca",
     "img": "null"
   },
   {
@@ -3812,8 +3812,8 @@
     "name_en": "Bohemian Waxwing",
     "name_de": "Seidenschwanz",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=AEF821EC4625150E",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Seidenschwanz",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Seidenschwanz_(Art)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Bombycilla_garrulusII.jpg/600px-Bombycilla_garrulusII.jpg"
   },
   {
     "scientific_name": "Prunella collaris",
@@ -3964,7 +3964,7 @@
     "name_en": "Olive-backed Pipit",
     "name_de": "Waldpieper",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=25F7AF6531AEED37",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Waldpieper",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Anthus_hodgsoni",
     "img": "null"
   },
   {
@@ -4028,16 +4028,16 @@
     "name_en": "Hawfinch",
     "name_de": "Kernbeißer",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=84E1F1149261F19E",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Kernbei%C3%9Fer",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Kernbei%C3%9Fer_(Art)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Coccothraustes_coccothraustes_1_%28Marek_Szczepanek%29.jpg/600px-Coccothraustes_coccothraustes_1_%28Marek_Szczepanek%29.jpg"
   },
   {
     "scientific_name": "Carpodacus erythrinus",
     "name_en": "Common Rosefinch",
     "name_de": "Karmingimpel",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=3A713345F43AFFA6",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Karmingimpel",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Karmingimpel_(Art)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Carpodacus_erythrinus_NAUMANN.jpg/600px-Carpodacus_erythrinus_NAUMANN.jpg"
   },
   {
     "scientific_name": "Pinicola enucleator",
@@ -4052,8 +4052,8 @@
     "name_en": "Eurasian Bullfinch",
     "name_de": "Gimpel",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=24764DC7AD26E5F7",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Gimpel",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Gimpel_(Art)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Bullfinch_male.jpg/600px-Bullfinch_male.jpg"
   },
   {
     "scientific_name": "Bucanetes githagineus",
@@ -4092,15 +4092,15 @@
     "name_en": "Common Redpoll",
     "name_de": "Taigabirkenzeisig",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=A2BB98A9A61F777B",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Taigabirkenzeisig",
-    "img": "null"
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Birkenzeisig",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Acanthis_flammea%2C_Kotka%2C_Finland_3.jpg/600px-Acanthis_flammea%2C_Kotka%2C_Finland_3.jpg"
   },
   {
     "scientific_name": "Acanthis cabaret",
     "name_en": "Lesser Redpoll",
     "name_de": "Alpenbirkenzeisig",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=D41F16148782AF8F",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Alpenbirkenzeisig",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Acanthis_cabaret",
     "img": "null"
   },
   {
@@ -4196,7 +4196,7 @@
     "name_en": "Red-headed Bunting",
     "name_de": "Braunkopfammer",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=DBF8D184AA08A548",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Braunkopfammer",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Emberiza_bruniceps",
     "img": "null"
   },
   {
@@ -4244,7 +4244,7 @@
     "name_en": "Gray-necked Bunting",
     "name_de": "Steinortolan",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=CF70007E92F2A30B",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Steinortolan",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Emberiza_buchanani",
     "img": "null"
   },
   {
@@ -4308,7 +4308,7 @@
     "name_en": "Black-faced Bunting",
     "name_de": "Maskenammer",
     "avibase_url": "https://avibase.bsc-eoc.org/species.jsp?avibaseid=2BB0E1371560B55C",
-    "wikipedia_url": "https://de.wikipedia.org/wiki/Maskenammer",
+    "wikipedia_url": "https://de.wikipedia.org/wiki/Emberiza_spodocephala",
     "img": "null"
   },
   {
