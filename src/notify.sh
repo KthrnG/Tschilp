@@ -10,31 +10,36 @@ function beenden() {
 }
 
 function datenbank_anlegen() {
-  sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/beobachtungen.sqlite" <<'END_SQL'
-CREATE TABLE IF NOT EXISTS voegel (
-  id TEXT PRIMARY KEY,
-  name TEXT,
-  anzahl_beobachtungen INTEGER,
-  letzte_beobachtung INTEGER,
-  confidence FLOAT
-);
-END_SQL
+  sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/tschilp.sqlite" "CREATE TABLE IF NOT EXISTS beobachtungen (scientific_name TEXT PRIMARY KEY,anzahl_beobachtungen INTEGER,letzte_beobachtung INTEGER,confidence FLOAT);"
+}
+
+function neuer_vogel() {
+  mkdir -p "$TSCHILP_VERZEICHNIS/tmp"
+  echo "Neuer Vogel: $1"
+  sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/tschilp.sqlite" "INSERT INTO beobachtungen VALUES ('$1',1,'$2','$3')"
+  scientific_name=$1 \
+    name_de=$(sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/tschilp.sqlite" "SELECT name_de FROM voegel WHERE scientific_name='$1'") \
+    wikipedia_url=$(sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/tschilp.sqlite" "SELECT wikipedia_url FROM voegel WHERE scientific_name='$1'") \
+    img=$(sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/tschilp.sqlite" "SELECT img FROM voegel WHERE scientific_name='$1'") \
+    envsubst <"$TSCHILP_VERZEICHNIS/template/email.html" >"$TSCHILP_VERZEICHNIS/tmp/email.html"
+  lame $TSCHILP_AUDIOARCHIV/$timestamp.wav "$TSCHILP_VERZEICHNIS/tmp/$timestamp.mp3"
+  sendemail -S "$(which sendmail)" -u "Tschilp!" -f "Tschilp <fabian.grote@posteo.de>" -t "$TSCHILP_EMAIL_EMPFAENGER" -a "$TSCHILP_VERZEICHNIS/tmp/$timestamp.mp3" <"$TSCHILP_VERZEICHNIS/tmp/email.html"
+}
+
+function alter_vogel() {
+  echo "Alter Vogel: $1 ($4)"
+  sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/tschilp.sqlite" "UPDATE beobachtungen SET anzahl_beobachtungen = anzahl_beobachtungen + 1, letzte_beobachtung = '$2', confidence = '$3' WHERE scientific_name='$1';"
 }
 
 function benachrichtigen() {
   for datei in $TSCHILP_ANALYSEVERZEICHNIS/*.csv; do
     while IFS=$';' read -r start end scientific_name common_name confidence; do
       timestamp=$(basename -s .csv $datei)
-      anzahl=$(sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/beobachtungen.sqlite" "SELECT anzahl_beobachtungen FROM voegel WHERE id='$scientific_name';")
+      anzahl=$(sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/tschilp.sqlite" "SELECT anzahl_beobachtungen FROM beobachtungen WHERE scientific_name='$scientific_name';")
       if [ -z "$anzahl" ]; then
-        echo "Neuer Vogel: $common_name"
-        sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/beobachtungen.sqlite" "INSERT INTO voegel VALUES ('$scientific_name','$common_name',1,'$timestamp','$confidence')"
-        mail -s "Neuer Vogel: $common_name" $TSCHILP_EMAIL_EMPFAENGER -aFrom:Tschilp\<$TSCHILP_EMAIL_ABSENDER\> -A $TSCHILP_AUDIOARCHIV/$timestamp.wav <<'END_MAIL'
-Ein neuer Vogel kam vorbei! https://de.wikipedia.org/wiki/$scientific_name
-END_MAIL
+        neuer_vogel "$scientific_name" "$timestamp" "$confidence"
       else
-        echo "Alter Vogel: $common_name ($anzahl)"
-        sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/beobachtungen.sqlite" "UPDATE voegel SET anzahl_beobachtungen = anzahl_beobachtungen + 1, letzte_beobachtung = '$timestamp', confidence = '$confidence' WHERE id='$scientific_name';"
+        alter_vogel "$scientific_name" "$timestamp" "$confidence" "$anzahl"
       fi
     done < <(tail -n +2 $datei)
     mv $datei $TSCHILP_ANALYSEARCHIV/

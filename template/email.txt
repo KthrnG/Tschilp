@@ -1,0 +1,5 @@
+Tschilp!
+
+Ein neuer Vogel war da: ${name_de} (${scientific_name})
+
+${wikipedia_url}
