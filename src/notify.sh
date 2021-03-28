@@ -15,20 +15,27 @@ function datenbank_anlegen() {
 
 function neuer_vogel() {
   mkdir -p "$TSCHILP_VERZEICHNIS/tmp"
-  echo "Neuer Vogel: $1"
-  sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/tschilp.sqlite" "INSERT INTO beobachtungen VALUES ('$1',1,'$2','$3')"
-  scientific_name=$1 \
-    name_de=$(sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/tschilp.sqlite" "SELECT name_de FROM voegel WHERE scientific_name='$1'") \
-    wikipedia_url=$(sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/tschilp.sqlite" "SELECT wikipedia_url FROM voegel WHERE scientific_name='$1'") \
-    img=$(sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/tschilp.sqlite" "SELECT img FROM voegel WHERE scientific_name='$1'") \
+  echo "Neuer Vogel: $scientific_name"
+  sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/tschilp.sqlite" "INSERT INTO beobachtungen VALUES ('$scientific_name',1,'$timestamp','$confidence')"
+  scientific_name=$scientific_name \
+    name_de=$(sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/tschilp.sqlite" "SELECT name_de FROM voegel WHERE scientific_name='$scientific_name'") \
+    wikipedia_url=$(sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/tschilp.sqlite" "SELECT wikipedia_url FROM voegel WHERE scientific_name='$scientific_name'") \
+    img=$(sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/tschilp.sqlite" "SELECT img FROM voegel WHERE scientific_name='$scientific_name'") \
     envsubst <"$TSCHILP_VERZEICHNIS/template/email.html" >"$TSCHILP_VERZEICHNIS/tmp/email.html"
   lame $TSCHILP_AUDIOARCHIV/$timestamp.wav "$TSCHILP_VERZEICHNIS/tmp/$timestamp.mp3"
-  sendemail -S "$(which sendmail)" -u "Tschilp!" -f "Tschilp <fabian.grote@posteo.de>" -t "$TSCHILP_EMAIL_EMPFAENGER" -a "$TSCHILP_VERZEICHNIS/tmp/$timestamp.mp3" <"$TSCHILP_VERZEICHNIS/tmp/email.html"
+  sendemail \
+    -S "$(which sendmail)" \
+    -u "Tschilp!" \
+    -f "Tschilp <fabian.grote@posteo.de>" \
+    -t "$TSCHILP_EMAIL_EMPFAENGER" \
+    -a "$TSCHILP_VERZEICHNIS/tmp/$timestamp.mp3" \
+    -o message-charset=utf-8 \
+    <"$TSCHILP_VERZEICHNIS/tmp/email.html"
 }
 
 function alter_vogel() {
-  echo "Alter Vogel: $1 ($4)"
-  sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/tschilp.sqlite" "UPDATE beobachtungen SET anzahl_beobachtungen = anzahl_beobachtungen + 1, letzte_beobachtung = '$2', confidence = '$3' WHERE scientific_name='$1';"
+  echo "Alter Vogel: $scientific_name ($anzahl)"
+  sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/tschilp.sqlite" "UPDATE beobachtungen SET anzahl_beobachtungen = anzahl_beobachtungen + 1, letzte_beobachtung = '$timestamp', confidence = '$confidence' WHERE scientific_name='$scientific_name';"
 }
 
 function benachrichtigen() {
@@ -37,9 +44,9 @@ function benachrichtigen() {
       timestamp=$(basename -s .csv $datei)
       anzahl=$(sqlite3 "$TSCHILP_DATENBANKVERZEICHNIS/tschilp.sqlite" "SELECT anzahl_beobachtungen FROM beobachtungen WHERE scientific_name='$scientific_name';")
       if [ -z "$anzahl" ]; then
-        neuer_vogel "$scientific_name" "$timestamp" "$confidence"
+        neuer_vogel
       else
-        alter_vogel "$scientific_name" "$timestamp" "$confidence" "$anzahl"
+        alter_vogel
       fi
     done < <(tail -n +2 $datei)
     mv $datei $TSCHILP_ANALYSEARCHIV/
