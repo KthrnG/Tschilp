@@ -6,7 +6,7 @@ function datenbank_anlegen() {
 
 function datenbank_fuellen() {
   IFS=$'\n'
-  for vogel in $(jq -c .[] ../voegel.json); do
+  for vogel in $(jq -c .[] voegel.json); do
     scientific_name=$(echo $vogel | jq '.scientific_name')
     name_en=$(echo $vogel | jq '.name_en')
     name_de=$(echo $vogel | jq '.name_de')
