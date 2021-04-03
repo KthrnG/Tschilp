@@ -1,0 +1,14 @@
+[Unit]
+Description=Tschilp Record Service
+
+[Service]
+Type=simple
+ExecStartPre=/bin/sleep 60
+ExecStart=/home/pi/record.sh
+Restart=on-failure
+EnvironmentFile=/home/pi/raspberry.env
+User=pi
+
+[Install]
+WantedBy=multi-user.target
+

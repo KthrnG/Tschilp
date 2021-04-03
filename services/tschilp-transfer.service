@@ -1,0 +1,13 @@
+[Unit]
+Description=Tschilp Transfer Service
+
+[Service]
+Type=simple
+ExecStart=/home/pi/transfer.sh
+Restart=on-failure
+EnvironmentFile=/home/pi/raspberry.env
+User=pi
+
+[Install]
+WantedBy=multi-user.target
+

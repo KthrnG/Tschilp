@@ -1,0 +1,13 @@
+[Unit]
+Description=Tschilp Analyse Service
+
+[Service]
+Type=simple
+ExecStart=/home/kathi/tschilp/analyse.sh
+Restart=on-failure
+EnvironmentFile=/home/kathi/tschilp/paula.env
+User=kathi
+
+[Install]
+WantedBy=multi-user.target
+

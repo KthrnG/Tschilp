@@ -1,0 +1,13 @@
+[Unit]
+Description=Tschilp VPN Service
+
+[Service]
+Type=simple
+ExecStart=/home/pi/vpn.sh
+Restart=on-failure
+EnvironmentFile=/home/pi/raspberry.env
+User=root
+
+[Install]
+WantedBy=multi-user.target
+

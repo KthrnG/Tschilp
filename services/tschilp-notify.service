@@ -1,0 +1,13 @@
+[Unit]
+Description=Tschilp Notify Service
+
+[Service]
+Type=simple
+ExecStart=/home/kathi/tschilp/notify.sh
+Restart=on-failure
+EnvironmentFile=/home/kathi/tschilp/paula.env
+User=kathi
+
+[Install]
+WantedBy=multi-user.target
+
