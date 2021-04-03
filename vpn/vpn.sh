@@ -1,19 +1,21 @@
 #!/bin/bash
 
-VPNC=/usr/sbin/vpnc
+trap beenden SIGINT SIGTERM
+
+function beenden() {
+  echo "Stoppe VPN ..."
+  vpnc-disconnect
+  exit
+}
 
 while true; do
-  if nc -w2 -z $TSCHILP_SERVER; then
-    exit
+  ping -c 3 $TSCHILP_SERVER
+  if [ $? -eq 0 ]; then
+    echo "Connection to $TSCHILP_SERVER successful. Doing nothing."
+    sleep 60 &
+    wait $!
+  else
+    echo "Unable to connect to target. Restarting VPN..."
+    vpnc $TSCHILP_VPN_CONFIG
   fi
-  if nc -w3 -z $TSCHILP_SERVER; then
-    exit
-  fi
-  if nc -w4 -z $TSCHILP_SERVER; then
-    exit
-  fi
-  echo "$(date): unable to connect to target, restarting VPN..."
-  $VPNC $TSCHILP_VPN_CONFIG
-  sleep 60 &
-  wait $!
 done
