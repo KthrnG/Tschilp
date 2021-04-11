@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Den Ton mit dem angeschlossenen Mikrofon kontinuierlich aufnehmen und in Dateien von 10 Sekunden Länge speichern.
+# Den Ton mit dem angeschlossenen Mikrofon kontinuierlich aufnehmen und in Dateien von 3 Sekunden Länge speichern.
 
 trap beenden SIGINT SIGTERM
 

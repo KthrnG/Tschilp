@@ -26,7 +26,7 @@ function neuer_vogel() {
   sendemail \
     -S "$(which sendmail)" \
     -u "Tschilp!" \
-    -f "Tschilp <fabian.grote@posteo.de>" \
+    -f "Tschilp <$TSCHILP_EMAIL_ABSENDER>" \
     -t "$TSCHILP_EMAIL_EMPFAENGER" \
     -a "$TSCHILP_VERZEICHNIS/tmp/$timestamp.mp3" \
     -o message-charset=utf-8 \
